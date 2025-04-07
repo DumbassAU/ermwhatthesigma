@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
@@ -10,11 +11,21 @@ public static class CrowdedModPatch
 {
     public const string CrowdedId = "xyz.crowdedmods.crowdedmod";
 
+    public static bool CrowdedLoaded([NotNullWhen(true)] out Assembly? assembly)
+    {
+        var result = IL2CPPChainloader.Instance.Plugins.TryGetValue(CrowdedId, out var plugin);
+        assembly = result ? plugin?.Instance.GetType().Assembly : null;
+        return result;
+    }
+
+    public static bool Prepare()
+    {
+        return CrowdedLoaded(out _);
+    }
+
     public static IEnumerable<MethodBase> TargetMethods()
     {
-        var crowdedLoaded = IL2CPPChainloader.Instance.Plugins.TryGetValue(CrowdedId, out var plugin);
-
-        if (crowdedLoaded && plugin?.Instance.GetType().Assembly.GetType("CrowdedMod.Patches.GenericPatches") is { } genericPatches)
+        if (CrowdedLoaded(out var assembly) && assembly.GetType("CrowdedMod.Patches.GenericPatches") is { } genericPatches)
         {
             yield return AccessTools.PropertyGetter(genericPatches, "ShouldDisableColorPatch");
         }
