@@ -58,7 +58,8 @@ public static class CharacterPatches
     }
 
     [HarmonyPrefix]
-    [HarmonyPatch(typeof(LongBoiPlayerBody), nameof(LongBoiPlayerBody.SetHeighFromDistanceHnS))]
+    //[HarmonyPatch(typeof(LongBoiPlayerBody), nameof(LongBoiPlayerBody.SetHeighFromDistanceHnS))]
+    // TODO: unsafe to patch in android.
     public static bool NeckSizePatch(LongBoiPlayerBody __instance, ref float distance)
     {
         __instance.targetHeight = distance / 10f + 0.5f;

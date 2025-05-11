@@ -6,6 +6,7 @@ using Reactor.Utilities.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Il2CppInterop.Runtime.Attributes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -154,11 +155,13 @@ public class PlayerTagManager(IntPtr ptr) : MonoBehaviour(ptr)
         }
     }
 
+    [HideFromIl2Cpp]
     public PlayerTag? GetTagByName(string tagName)
     {
         return Tags.Keys.FirstOrDefault(playerTag => playerTag.Name == tagName);
     }
 
+    [HideFromIl2Cpp]
     public void RemoveTag(PlayerTag tagStruct)
     {
         if (!Tags.TryGetValue(tagStruct, out var playerTag))
@@ -180,6 +183,7 @@ public class PlayerTagManager(IntPtr ptr) : MonoBehaviour(ptr)
         }
     }
 
+    [HideFromIl2Cpp]
     public void AddTag(PlayerTag plrTag)
     {
         if (Tags.ContainsKey(plrTag))
