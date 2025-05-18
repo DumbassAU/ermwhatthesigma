@@ -11,6 +11,7 @@ public static class PoolablePlayerPatches
 {
     [HarmonyPrefix]
     [HarmonyPatch(nameof(PoolablePlayer.UpdateFromPlayerData))]
+    [HarmonyPatch(nameof(PoolablePlayer.UpdateFromEitherPlayerDataOrCache))]
     public static void UpdateFromPlayerPrefix(PoolablePlayer __instance, NetworkedPlayerInfo pData)
     {
         if (!pData)

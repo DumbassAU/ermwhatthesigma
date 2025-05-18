@@ -8,7 +8,7 @@ namespace LaunchpadReloaded.Modifiers.Game.Crewmate;
 public sealed class MayorModifier : LPModifier
 {
     public override string ModifierName => "Mayor";
-    public override string Description =>
+    public override string GetDescription() =>
         $"You have an additional \n{OptionGroupSingleton<MayorOptions>.Instance.ExtraVotes} votes every meeting.";
 
     public override int GetAssignmentChance() => (int)OptionGroupSingleton<CrewmateModifierOptions>.Instance.MayorChance;

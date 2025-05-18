@@ -15,7 +15,7 @@ namespace LaunchpadReloaded.Modifiers.Game.Crewmate;
 public sealed class VendettaModifier : LPModifier
 {
     public override string ModifierName => "Vendetta";
-    public override string Description =>
+    public override string GetDescription() =>
         $"You can mark " +
         $"{OptionGroupSingleton<VendettaOptions>.Instance.MarkUses} player{(OptionGroupSingleton<VendettaOptions>.Instance.MarkUses > 1 ? "s" : "")} per round\n" +
         $"If they vote you in the next meeting,\nthey will die in the next round.";

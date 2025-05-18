@@ -10,14 +10,8 @@ namespace LaunchpadReloaded.Modifiers;
 [MiraIgnore]
 public abstract class LPModifier : GameModifier
 {
-    public abstract string Description { get; }
     public virtual bool RemoveOnDeath => true;
     public override int GetAmountPerGame() => 1;
-
-    public override string GetHudString()
-    {
-        return base.GetHudString() + $"\n<size=75%>{Description}</size>";
-    }
 
     public override bool IsModifierValidOn(RoleBehaviour role)
     {

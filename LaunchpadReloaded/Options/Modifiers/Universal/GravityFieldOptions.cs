@@ -1,5 +1,6 @@
 ﻿using System;
 using LaunchpadReloaded.Modifiers.Game;
+using LaunchpadReloaded.Modifiers.Game.Universal;
 using MiraAPI.GameOptions;
 using MiraAPI.GameOptions.Attributes;
 using MiraAPI.Utilities;

@@ -5,12 +5,12 @@ using MiraAPI.GameOptions;
 using Reactor.Utilities.Extensions;
 using UnityEngine;
 
-namespace LaunchpadReloaded.Modifiers.Game;
+namespace LaunchpadReloaded.Modifiers.Game.Universal;
 
 public sealed class GravityModifier : LPModifier
 {
     public override string ModifierName => "Gravity Field";
-    public override string Description => "You slow down players near you.";
+    public override string GetDescription() => "You slow down players near you.";
     public override int GetAssignmentChance() => (int)OptionGroupSingleton<UniversalModifierOptions>.Instance.GravityChance;
     public override int GetAmountPerGame() => 1;
 

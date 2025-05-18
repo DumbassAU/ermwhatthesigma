@@ -8,7 +8,7 @@ namespace LaunchpadReloaded.Modifiers.Game.Crewmate;
 public sealed class TorchModifier : LPModifier
 {
     public override string ModifierName => "Torch";
-    public override string Description => 
+    public override string GetDescription() => 
         OptionGroupSingleton<TorchOptions>.Instance.UseFlashlight
         ? "You will have a flashlight\nif lights are sabotaged."
         : "You have max vision\nif lights are sabotaged.";
