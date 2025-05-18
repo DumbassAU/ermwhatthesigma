@@ -1,14 +1,9 @@
 ﻿using Il2CppSystem;
 using LaunchpadReloaded.Features;
 using LaunchpadReloaded.Modifiers;
-using LaunchpadReloaded.Modifiers.Game.Crewmate;
-using LaunchpadReloaded.Options;
 using LaunchpadReloaded.Options.Modifiers.Crewmate;
-using LaunchpadReloaded.Options.Roles.Impostor;
-using LaunchpadReloaded.Roles.Impostor;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
-using MiraAPI.Networking;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using UnityEngine;
