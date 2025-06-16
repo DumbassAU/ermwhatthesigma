@@ -15,6 +15,8 @@ You can read about all of the features on the nowhere, but here are a couple of 
 - ✅ Feature-Rich Roles
 - ✅ New Game Options
 - ✅ Exciting Gamemodes
+- ✅ Job Application
+> this mod has been restricted due to too much expected fear on the project, it was caused by job application but i wont delete it.
 
 ## 🔧 Compatibility
 - ✔️ Supports 2025.3.25 (16.0.0) on PC (Android support coming soon™).
