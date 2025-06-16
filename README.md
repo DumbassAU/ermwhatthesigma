@@ -8,7 +8,7 @@
 erm what the sigma ohio rizz: Reloaded is a mod for Among Us that adds in brand new roles, features, and gamemodes! It is designed so that the roles and features stay somewhat consistent with the original game and don't feel out of place!
 
 ## 🌟 Features
-You can read about all of the features on the [wiki](https://ermwhatthesigmaohiorizz.reloaded.dev/), but here are a couple of them:
+You can read about all of the features on the nowhere, but here are a couple of them:
 
 - ✅ Gradient Colors
 - ✅ Special Voting Modes
