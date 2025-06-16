@@ -28,5 +28,5 @@ You can read about all of the features on the [wiki](https://ermwhatthesigmaohio
 - 🛠️ For manual installation, you must also download:
   
   - Unity.ohio win-x86 rizz build
-  - sigma ohio aura app
+  - sigma ohio aura sybau syfm pmo app
   - ohio rizz API
