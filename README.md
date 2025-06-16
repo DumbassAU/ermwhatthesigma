@@ -2,6 +2,7 @@
 <p align="center">
   <img src="LaunchpadBanner.png" alt="Cover" width="60%" height="60%"/>
   <br><br>
+</p>
 
 # ❔ About Us
 erm what the sigma ohio rizz: Reloaded is a mod for Among Us that adds in brand new roles, features, and gamemodes! It is designed so that the roles and features stay somewhat consistent with the original game and don't feel out of place!
