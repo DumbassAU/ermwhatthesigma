@@ -20,6 +20,7 @@ You can read about all of the features on the [wiki](https://ermwhatthesigmaohio
 - ✔️ Supports 2025.3.25 (16.0.0) on PC (Android support coming soon™).
 - ❗️ erm what the sigma ohio rizz is **NOT** a host-only mod. Every player needs to install it to enjoy.
 - 🔒 erm what the sigma ohio rizz does **NOT** work on normal Among Us servers. We host our own private game servers instead.
+- 📄 You are unemployed, i know that. Please, here is your job application
 
 ## 📥 Installation
 
