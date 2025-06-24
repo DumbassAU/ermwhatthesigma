@@ -29,6 +29,6 @@ You can read about all of the features on the nowhere, but here are a couple of 
 - 🚀 Download the latest version using the sigma ohio aura app
 - 🛠️ For manual installation, you must also download:
   
-  - Unity.ohio win-x86 rizz build
+  - Skibidi-Creator.ohio win-x86 rizz build
   - sigma ohio aura sybau syfm pmo app
   - ohio rizz API
